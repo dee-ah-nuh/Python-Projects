@@ -21,5 +21,6 @@ def run():
         webbrowser.get('chrome').open(url[i])
         
 run()
+print(...and have a nice day!)
 
 
