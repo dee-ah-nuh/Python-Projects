@@ -801,7 +801,28 @@ with open('lake_como.jpg', 'wb') as handler:
 
 #ethan = 'welkl this is a story all about how my life got flip flopped upside down..\
 #i would like to take a moment to just sit right there and tell you BOUT BELLAIRE'
-     
+print("# ============================================================================================")
+print("#Dictionaries adn the input functions")
+print("# ============================================================================================")    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # WE INTERRUPT TO BRING A BRIEF MESSAGE:
 import sqlite3
