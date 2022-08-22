@@ -426,7 +426,7 @@ for toppings in pizzasIlike:
         print()
 pizzas[1]= 'marguerita'
 
- 
+"""
 
 print("# ============================================================================================")
 print("#Dictionaries and Web Scrapping")
@@ -448,8 +448,7 @@ import requests
 # links = soup.find_all("a")
 #print(links,'\n\n')
 
-
-"""STEPS to FOLLOW Web Scraping"""
+#STEPS to FOLLOW Web Scraping
 #0. If not done so, (if chrome) enable: chrome://flags/#allow-insecure-localhost as the local host server on computer
 
 #1. load webpage with requests
@@ -465,7 +464,7 @@ soup = bs(r.content, 'lxml')
 print(soup)
 print(soup.prettify())
 
-"""HTML version of the webpage"""
+#HTML version of the webpage
 #grabbing any header with find and find_all
 first_header = soup.find("h2")
 #prints the first header and stops on first element
@@ -499,7 +498,7 @@ string_search = soup.find_all("p", string = re.compile('Some'))
 headers = soup.find_all("h2", string = re.compile("(H|h)eader"))
 
 
-"""CSS version of the webpage"""
+#CSS version of the webpage
 #exactly the same as the find/find_all libraries
 # content = soup.find_all("h1")
 content = soup.select("h1")
@@ -523,7 +522,7 @@ paragraphs = soup.select("body > p")
     
     
     
-"""Getting HTML Properties"""
+#Getting HTML Properties
 header = soup.find("h2")
 div = soup.find('div')
 #if theres multiple chuildren within the object (options), get text returns all the optins
@@ -536,7 +535,7 @@ paragraphs = soup.select("p#paragraph-id")
 paragraphs[0]['id']
 
 
-"""Code Navigation"""
+#Code Navigation
 ###PATH SYNTAX###
 soup.body.div.h1.string
 #####                        Terms:
@@ -797,20 +796,71 @@ full_url = url + image_url
 img_data = requests.get(full_url).content
 with open('lake_como.jpg', 'wb') as handler:
     handler.write(img_data)
-
+"""
 
 #ethan = 'welkl this is a story all about how my life got flip flopped upside down..\
 #i would like to take a moment to just sit right there and tell you BOUT BELLAIRE'
 print("# ============================================================================================")
-print("#Dictionaries adn the input functions")
-print("# ============================================================================================")    
+print("#Classes and the Functions")
+print("# ============================================================================================")  
+
+  
+def display_message():
+    print("I am learning about functions")
+    
+display_message()
+
+def describe_pet(animal_type, pet_name):
+    print(f"I have a {animal_type}, her name is {pet_name}")
+
+describe_pet('dog', 'noma')
+
+def hello_name(username):
+    print(f"Hello {username.title()}! Its very nice to meet you!")
+
+hello_name("noma")
+
+def make_shirt(size, text):
+    print(f"Summary Report of Shirt: Size = {size.upper()} & Text: {text.title()}")
+make_shirt('m', 'i love soda')
 
 
+def make_shirt(size="M", text='I love soda'):
+    print(f"Summary Report of Shirt: Size = {size.upper()} & Text: {text.title()}")
+make_shirt()
+
+#Return Values 
+def full_name(first_name, last_name):
+    print(f"{first_name.title()}")
+    print(f"{last_name.title()}")
+    
+    fullname= f"{first_name} {last_name}"
+    return(fullname)
+
+musiciansFullName = full_name('jimmi', 'hendrix')
+print(musiciansFullName)
 
 
+def real_madrid(club_name, fc):
+    print(f"{club_name.title()}")
+    print(f"{fc.upper()}")
+    
+    full_club_name = f"{club_name.title()} {fc.upper()}"
+    return (full_club_name)
 
+realMadrid = real_madrid("real madrid", "fc")
+print(realMadrid)
 
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
+    def sit(self):
+        print(f"{self.name} is now sitting.")
+
+    def rollover(self):
+        print(f"{self.name} rolled over!")
 
 
 
