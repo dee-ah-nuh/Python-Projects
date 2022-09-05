@@ -25,12 +25,4 @@ info_box = soup.find_all("table", {"class": "infobox vevent"})
 
 
 
-
-
-
-
-
-
-
-
 print(soup.prettify())
