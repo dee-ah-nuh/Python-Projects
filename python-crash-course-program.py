@@ -1,5 +1,3 @@
-from datetime import MAXYEAR
-
 import pandas as pd
 import numpy as np
 # =============================================================================
@@ -158,7 +156,7 @@ print("Im not crying, I just have something in my eye...")
 print("\n")
 for stuff in west:
     print(f"{stuff}, have/has been studied in the past and its really good to educate on these topics")
-print(f"what do you say eh?")
+print("what do you say eh?")
 
 pizzas = ['peperoni', 'meraguerita', 'mushrooms' , 'cheese', 'meat']
 print("\nall my favorite pizza flavors are here! Look they have:")
@@ -863,6 +861,7 @@ class Dog:
         print(f"{self.name} rolled over!")
 
 
+Dog.sit("noma")
 
 
 
