@@ -860,15 +860,17 @@ class Dog:
     def rollover(self):
         print(f"{self.name} rolled over!")
 
-
-Dog.sit("noma")
-
-
+noma = Dog("noma", 2)
+Dog.sit(noma)
 
 
 
 
 
+
+SELECT first_name, last_name, city, email\n",
+    "FROM customer, city\n",
+    "WHERE city_id=312\n",
 
 
 
