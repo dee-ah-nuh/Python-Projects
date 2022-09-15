@@ -863,15 +863,27 @@ class Dog:
 noma = Dog("noma", 2)
 Dog.sit(noma)
 
+noma = {"Name": "Noma",
+        "Age_(months)": 22 ,
+        "Eyes": "Blue and Brown",
+        "Spayed": "Yes",
+        "Type_of_food": "Dry",
+        "Type_of_coat": "Tan",
+        "Owner_name": 'Diana Valladares',
+        "Favorite_toy": "Bone" ,
+        "Distractions": "Squirrels",
+        "Best_friend": "Sandwich"
+ }
 
 
 
 
-
-SELECT first_name, last_name, city, email\n",
-    "FROM customer, city\n",
-    "WHERE city_id=312\n",
-
+# =============================================================================
+# SELECT first_name, last_name, city, email\n",
+#     "FROM customer, city\n",
+#     "WHERE city_id=312\n",
+# 
+# =============================================================================
 
 
 
