@@ -295,7 +295,7 @@ print(food=='ghetti')
 print('well actually its the same')
         
 print("# =============================================================================")
-print("# IF ELIF")
+print("IF ELIF")
 print("# =============================================================================")
 
 age = 11 
@@ -311,7 +311,7 @@ else:
 
         
 print("# ====================================================")
-print("# IF ELIF with DF")
+print("IF ELIF with DF")
 print("# ====================================================")
 df = pd.DataFrame(np.random.randn(10, 5), columns = ['A','B', 'C', 'D', 'E'])
 print(df)
@@ -369,37 +369,7 @@ else:
     print('its empty bro')
 
 print("# ============================================================================================")
-print("#Dictionaries")
-print("# ============================================================================================")
-
-alien_o = {'color': 'green', 'points': 5}
-#adding another dict in dictionary get it?
-alien_o['position_x'] = 25
-alien_o['position_y'] = 30
-alien_o['speed'] = 'slow'
-alien_o['color'] = 'yellow'
-
-
-if alien_o['color'] =='yellow':
-    x_increment = 1
-if alien_o['color'] =='green':
-     x_increment = 4   
-if alien_o['color'] =='red':
-    x_increment = 15
-else:
-    x_increment = 35
-    
-alien_o['position_x'] = alien_o['position_x'] + x_increment
-#interesting he for loop prints the if sttemtn if the number is surrounded by quotes
-# variable = input("how old are you? ")
-# if variable.strip() == '23':
-#     print('gtfafm')
-#     #the loop prints the else statement if we use it as a number - 23 instead of a string
-# else: 
-#     print('nothing')
-
-print("# ============================================================================================")
-print("#A P I s")
+print("A P I s")
 print("# ============================================================================================")
 #Keep it secret
 spotify_token='BQC1c62zkTmpXYj0d2f-FxZwm6kj_mw2bg1BXMrjQiXxk8QIEoZax1LQ4GN9HIpznxpLOA9Cs6RtnWeY91gnygwk8x2UWD-zLB0ytlJ2u737wPIsXqk3TMCStrivpESLJKKWPsOLk7kVAnZsFgCAI0QJXh8h-JMN0n0eBre0qeK174aP'
@@ -410,19 +380,6 @@ twilio_act_id ='ACf52489953e06d0b615756bcfa6f4ca50'
 #conda update anaconda
 #conda install spyder=5.2.2
 
-
-print("# ========================================================================")
-print("#Using Multiple Lists")
-print("# ========================================================================")
-
-pizzas_availible = ['pepperoni', 'sausage', 'cheese']
-pizzasIlike = ['pepperoni']
-for toppings in pizzasIlike:
-    if pizzasIlike in pizzas_availible:
-        print('Adding ingredient: {pizzasIlike}')
-    else:
-        print()
-pizzas[1]= 'marguerita'
 
 """
 
@@ -799,7 +756,7 @@ with open('lake_como.jpg', 'wb') as handler:
 #ethan = 'welkl this is a story all about how my life got flip flopped upside down..\
 #i would like to take a moment to just sit right there and tell you BOUT BELLAIRE'
 print("# ============================================================================================")
-print("#Classes and the Functions")
+print("Classes and the Functions")
 print("# ============================================================================================")  
 
   
@@ -863,17 +820,54 @@ class Dog:
 noma = Dog("noma", 2)
 Dog.sit(noma)
 
-noma = {"Name": "Noma",
-        "Age_(months)": 22 ,
+print("# ========================================================================")
+print("Using Multiple Lists")
+print("# ========================================================================")
+
+pizzas_availible = ['pepperoni', 'sausage', 'cheese']
+pizzasIlike = ['pepperoni']
+for toppings in pizzasIlike:
+    if pizzasIlike in pizzas_availible:
+        print('Adding ingredient: {pizzasIlike}')
+    else:
+        print()
+pizzas[1]= 'marguerita'
+
+
+
+
+
+print("# ========================================================================")
+print("Using Dictionaries")
+print("# ========================================================================")
+
+
+noma = {'dogs':{"Name": "Noma",
+        "Age_(in months)": 22 ,
         "Eyes": "Blue and Brown",
         "Spayed": "Yes",
         "Type_of_food": "Dry",
         "Type_of_coat": "Tan",
-        "Owner_name": 'Diana Valladares',
+        "Owner_name": 'Deeahnuh',
         "Favorite_toy": "Bone" ,
         "Distractions": "Squirrels",
         "Best_friend": "Sandwich"
- }
+ }}
+dfNoma = pd.DataFrame(noma, index=[0])
+#you can assign two random ass variables to a 
+#loop that can loop through the dictionary for us
+for key, value in noma.items():
+    print(f"{key}: {value}")
+
+for noma in noma:
+    print('\n', noma[1])
+
+west.append('kanye')
+
+
+def create_dict(key1, key2):
+    return {(key1)}
+
 
 
 
