@@ -820,6 +820,9 @@ class Dog:
 noma = Dog("noma", 2)
 Dog.sit(noma)
 
+
+
+
 print("# ========================================================================")
 print("Using Multiple Lists")
 print("# ========================================================================")
@@ -881,6 +884,9 @@ def create_dict(key1, key2):
 
 
 
+
+
+
 # WE INTERRUPT TO BRING A BRIEF MESSAGE:
 import sqlite3
 from sqlite3 import Error
@@ -896,3 +902,49 @@ def create_connection():
     finally: 
         if conn:
             conn.close
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
